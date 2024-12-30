@@ -1,0 +1,117 @@
+.phone-field-group {
+    margin-bottom: 1em;
+  }
+  .phone-input-label {
+    margin-right: 8px;
+  }
+  .device-type-label {
+    margin-left: 16px;
+    margin-right: 8px;
+  }
+  .add-button {
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+  }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-right: 8px; /* spacing near label */
+  }
+
+  /* Hide the default checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider (the clickable part) */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;  /* OFF (NO) by default */
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 24px; 
+  }
+
+  /* The handle/circle of the slider */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  /* Toggle ON state */
+  input:checked + .slider {
+    background-color: #2196F3; /* ON (YES) color */
+  }
+
+  /* Move the handle to the right if toggled ON */
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Round slider style if you want a circle switch */
+  .slider.round {
+    border-radius: 24px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* Utility to hide content */
+  .hidden {
+    display: none;
+  }
+
+  .email-container {
+    margin-bottom: 1em;
+  }
+  .email-container label {
+    margin-right: 5px;
+  }
+  .email-container select {
+    margin-left: 5px;
+  }
+  .section-container {
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 300px;
+  }
+  .section-container h2 {
+    margin-top: 0;
+  }
+  .status-row {
+    margin-bottom: 1em;
+  }
+  label {
+    display: inline-block;
+    width: 80px;
+  }
+  input[type="text"] {
+    margin-bottom: 8px;
+    width: 150px;
+  }
